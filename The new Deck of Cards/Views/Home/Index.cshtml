@@ -1,0 +1,8 @@
+﻿@model Deck
+
+@foreach (var card in Model.cards)
+{
+<h2>You drew a @card.value @card.suit</h2>
+<img src="@card.images.png" /> 
+}
+
